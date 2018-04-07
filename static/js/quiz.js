@@ -183,14 +183,14 @@ firebase.database().ref().child('judger/start').on('value' , snap =>
             }, 1000);
         }
         
-        var fiveMinutes = 60 * 10,
+        var fiveMinutes = 60 * 3,
         display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
     } 
     
     else 
     {
-        window.location.href = "http://localhost:8000/" ;
+        window.location.href = "http://13.251.25.72/" ;
         fb.child('player').remove();
 
         var db = firebase.database();

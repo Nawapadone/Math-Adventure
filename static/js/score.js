@@ -43,7 +43,7 @@ var player = snapshot.val()
 
 function goPlayAgain()
 {
-    window.location.href = "http://localhost:8000/" ;
+    window.location.href = "http://13.251.25.72/" ;
     fb.child('player').remove();
 
     var db = firebase.database();
